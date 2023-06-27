@@ -9,11 +9,10 @@ Java implementation of scrypt algorithm.
 - Export SCryptCredentialHandler as jar file
 - Copy to TOMCAT_HOME/lib
 - Nest SCryptCredentialHandler in your realm
-
-	<Context>
-		<Realm className="org.apache.catalina.realm.DataSourceRealm"
-			[...]
-			>
+  
+	~~~
+ 	<Context>
+		<Realm className="org.apache.catalina.realm.DataSourceRealm">
 			<CredentialHandler className="org.labtest.encrypt.SCryptoCredentialHandler"/>
 		</Realm>
 	</Context>
