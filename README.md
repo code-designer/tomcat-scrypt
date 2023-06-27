@@ -1,9 +1,9 @@
-#Tomcat SCrypt
+# Tomcat SCrypt
 Tomcat [SCrypt](https://en.wikipedia.org/wiki/Scrypt) is inspired of Tomcat BCrypt.
 This is an implementation of Tomcat CredentialHandler wrapping [SCrypt](https://mvnrepository.com/artifact/com.lambdaworks/scrypt/1.4.0) (1.4.0), 
 Java implementation of scrypt algorithm.
 
-#How to use it
+# How to use it
 - Export SCryptCredentialHandler as jar file
 - Copy to TOMCAT_HOME/lib
 - Nest SCryptCredentialHandler in your realm
@@ -16,7 +16,8 @@ Java implementation of scrypt algorithm.
 	</Context>
 	
 PS: Do not forget SCrypt jar file
-#How to get CredentialHandler in code for hashing plaintext
+
+# How to get CredentialHandler in code for hashing plaintext
 We can get credential handler through 
 - application context
 	CredentialHandler ch = (CredentialHandler)application.getAttribute(Globals.CREDENTIAL_HANDLER);
